@@ -1,0 +1,14 @@
+.border
+{
+    margin: 1%;
+    padding: 3%;
+    border: 150px;
+}
+.input
+{
+    align-items: center;
+    width: 1120px;
+    height: 50px;
+    background-color: blanchedalmond;
+}
+

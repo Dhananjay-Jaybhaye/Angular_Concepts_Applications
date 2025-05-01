@@ -1,0 +1,48 @@
+<div style="border: 5px solid tomato;">
+<div [class] = "'border'" class = "container-fluid">
+    <div class="row">
+      <div class="col">
+        <br><br>
+        <h2 style="color: blueviolet; text-align: center;">Contact Our<br> 
+            <pre style="color: black;">Customer Support Center</pre></h2>
+      </div>
+      <div class="col">
+        <img src="images.jpeg" alt="This is laptop image" width="250px">
+      </div>
+    </div>
+<br>
+<div style="text-align: center;">
+    <h2>Contact Information</h2>
+    <p>Please fill out your contact information below</p>
+</div>
+<form [formGroup] = "MarvellousForm">
+    <div class="row">
+        <div class="col">
+            <label>First Name</label>
+          <input type="text" class="form-control" formControlName="FirstName" >
+        </div>      
+        <div class="col">
+            <label>Last Name</label>
+          <input type="text" class="form-control" formControlName="LastName">
+        </div>
+      </div>
+    
+    <div>
+        <label>Email</label>
+        <input type="email" class="form-control" formControlName="Email">
+    </div>
+
+    <div>
+        <label>Phone</label>
+        <input type="number" class="form-control" formControlName="PhoneNumber">
+    </div>
+
+    <div>
+        <label>Address</label>
+        <input type="textarea" class="form-control" formControlName="Address">
+    </div>
+    <br>
+    <button type="button" class="btn btn-success">Submit</button>
+
+</form>
+</div>
