@@ -1,0 +1,24 @@
+<h1 style="text-align: center; color: tomato;">Demonstration of ngIf structural directive</h1>
+
+<h2>Hello World...!</h2>
+
+<h2 *ngIf = "true">Good Morning</h2>
+
+<h2 *ngIf = "flag">Good Night</h2>
+
+<h2 *ngIf = "veg">Please Check below veg menu</h2>
+
+<ng-template #vegMenu>
+  <li>Mix Veg</li>
+  <li>Paneer Lababdar</li>
+  <li>Dal Fry</li>
+  <li>Shev Bhaji</li>
+</ng-template>
+
+<ng-template #nonVegMenu>
+  <li>Anda Curry</li>
+  <li>Chickan Lababdar</li>
+  <li>Chicken Biryani</li>
+</ng-template>
+
+<div *ngIf = "FoodOption; then vegMenu; else nonVegMenu"></div>
